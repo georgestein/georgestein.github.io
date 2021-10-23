@@ -1,1 +1,179 @@
-Hello World
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">George Stein</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<!-- <li><a href="generic.html">Generic</a></li> -->
+								<!-- <li><a href="elements.html">Elements</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"></span></div>
+							<h2>George Stein, PhD</h2>
+							<p>Postdoc. at UC Berkeley & Lawrence Berkeley National Laboratory</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/george.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">About me</h2>
+										<p>My research focuses on using machine learning to utilize large datasets.</p>
+										<p>After completing my PhD on Astrophysics at the University of Toronto in <a href="https://tspace.library.utoronto.ca/bitstream/1807/97685/1/Stein_George_F_201911_PhD_thesis.pdf">computational cosmology and machine learning</a> I joined UC Berkeley and Lawrence Berkeley National Laboratory to develop and apply machine learning methods to extract information from datasets across physics and astronomy. 
+										<p>Below you can find info on a few of my current and ongoing research projects and published works. The upper right-hand corner contains a few useful links.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/ssl_umap_small.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Millions of images, most without labelled information... So how do we learn?</h2>
+										<p>Current and next generation sky surveys image hundreds of millions of galaxies, yet the majority of them have little to no external external information, and it is safe to say that only a miniscule amount will ever be observed with a human eye. This provides a number of hurdles for training standard supervised machine learning models to classify galaxy types, determine physical quantities, and discover rare objects.</p>
+										<p>Utilizing self-supervised learning, an emerging paradigm in computer vision capabable of <i>learning without labelled information</i>, I compiled a dataset and distiled information from nearly 100 million images from the Dark Energy Spectroscopic Instrument (DESI) Legacy Imaging Surveys. </p>
+										<p>We use our models to perform data exploration of this massive dataset, and as a starting point to train models using the available labels to outperform what is capable with supervised learning. Check out our works below where develop tools for data exploration, discovering some of the most  rare and unique objects in the universe such as strong gravitational lenses, classify morphologies, and estimate the distances to far-away galaxies.</p>
+										<a href="https://share.streamlit.io/georgestein/galaxy_search" class="special">Try out my interactive data discovery app here</a>
+										<a href="https://cs.lbl.gov/news-media/news/2021/self-supervised-machine-learning-adds-depth-breadth-and-speed-to-sky-surveys/" class="special">See us in the press</a>
+
+										<p> Or take a look at some published works!</p>
+										<a href="https://arxiv.org/abs/2110.00023" class="special"><em>Mining for strong gravitational lenses with self-supervised learning</em>. Stein et al. 2021</a>
+										<a href="https://arxiv.org/abs/2012.13083" class="special"><em>Self-Supervised Representation Learning for Astronomical Images</em>. Hayat & Stein et al.</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/lhco_event.png" alt="" /></a>
+									<div class="content">
+									  <h2 class="major">Finding a needle in a haystack</h2>
+
+									  <p>Searching for signs of rare events is hard enough when you know what you are looking for, but what about when you're looking for completely unknown signs of new physics? The LHC Olympics (LHCO) data challenge was created to develop methods for this purpose. Participants were provided with a set of "black-box" datasets and charged with identifying any anomalous events - without having any idea what these events might look like</p>
+									  <p>While anomaly detection is a key application of machine learning, it is generally more focused on the detection of outlying samples in the low probability density regions of data. We instead developed a method for <t>unsupervised in-distribution anomaly detection</t> using a conditional density estimator, designed to find unique, yet completely unknown, sets of samples residing in high probability density regions</p>
+									  <p>Outperforming 12 other teams, we managed to detect a new particle appearing in only 0.08% of 1 million collision events, and took home the gold medal</p>
+										<p></p>
+										
+										<a href="https://arxiv.org/abs/2012.11638" class="special">Read the Paper: Stein, Seljak, Dai</a>
+										
+										<a href="https://newscenter.lbl.gov/2020/03/20/berkeley-lab-cosmologists-top-contenders-machine-learning-challenge/" class="special">See us in the press</a>
+										<a href="https://cerncourier.com/a/whats-in-the-box/" class="special">Read about the competition in detail</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Additional Projects</h2>
+									<p>Below are some additional projects that I am currently working on or have recently completed</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pae.png" alt="" /></a>
+											<h3 class="major">A probabilistic autoencoder for type Ia supernovae</h3>
+											<p>Type Ia supernovae are rare yet extremeley useful objects for mapping the expansion history of our universe. Yet their complexity cannot be modelled from first principles, which requires us to understand them in a data-driven mannor. I'm devoloping a Probabilistic Autoencoder to study the diversity of spectra we observe from them, to identify objects that do not fit average trends, and to minimize the error that propagates into cosmological analyses.</p>
+											<a href="*" class="special">Paper out soon!</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/websky.png" alt="" /></a>
+											<h3 class="major">The WebSky Suite of Extragalactic CMB simulations</h3>
+											<p>Realistic simulations of the universe are necessary to develop and test scientic analyses, but are a key technical challenge due to the large dynamic range and accuracy required. We worked to modernize, parallellize, and optimize performance of a the mass-Peak Patch simulational pipeline to run on high-performance computing clusters. After completing testing and development of the package, we constructed and released some of the most advanced simualtions to date - the Websky suite</p>
+											<a href="https://arxiv.org/abs/2001.08787" class="special">Websky paper: Stein et al., JCAP 2020</a>
+																						<a href="https://arxiv.org/abs/2001.08787" class="special">Methods paper: Stein et al., MNRAS 2019</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/ml-in-cosmology.png" alt="" /></a>
+											<h3 class="major">Machine learning in cosmology</h3>
+											<p>The rapid pace of machine learning applications in science is difficult to keep on-top of, yet recognizing trends and analysing state-of-the-art methods adds critical tools to your toolbelt. Over the past 3 years I've tried to help out by keeping an updated public list of all machine learning papers in cosmology. Take a look to see whats been going on in the field!</p>
+											<a href="https://github.com/georgestein/ml-in-cosmology" class="special">github.com/georgestein/ml-in-cosmology</a>
+										</article>
+
+										<article>
+											<a href="#" class="image"><img src="images/vnet.png" alt="" /></a>
+											<h3 class="major">A volumetric deep Convolutional Neural Network for simulation of mock dark matter halo catalogues</h3>
+											<p>Simulations of the universe from the initial conditions to the present day are computationally expensive. To speed things up, we trained a U-net on 3D volumes of the universe to predict the final structure given the initial conditions. This allowed us to skip the whole simulation and jump right to the final answer.</p>
+											<a href="https://arxiv.org/abs/1805.04537" class="special">Berger & Stein, MNRAS, 2019</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/covid.png" alt="" /></a>
+											<h3 class="major">COVID-19 in the USA: A state-by-state investigation</h3>
+											<p>The early stages of the pandemic contained extreme uncertainty, so beginning March 2020 I compiled data from the CDC, NYT, and a variety of other outlets to visualize and study mortality trends. By comparing 2020 mortality from all causes to the official coronavirus death toll, I uncovered in a few states clear evidence for an excess of deaths above those officially attributed to the virus.</p>
+											<a href="https://medium.com/@georgestein92/covid-19-in-the-usa-a-state-by-state-investigation-4ed5eca9a554" class="special">My analysis at medium</a>
+										</article>
+									</section>
+									<ul class="actions">
+<!--										<li><a href="#" class="button">Browse All</a></li> -->
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Please send me an email and/or check find some additional information on my resume!</p>
+							<ul class="contact">
+								<li class="icon solid fa-envelope"><a href="#">george.f.stein@gmail.com</a></li>
+								<li class="icon brands fa-github"><a href="#">https://github.com/georgestein</a></li>
+
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
