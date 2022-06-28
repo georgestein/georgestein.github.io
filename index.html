@@ -20,9 +20,9 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1><a href="index.html">George Stein</a></h1>
-						<nav>
+						<!-- <nav> 
 							<a href="#menu">Menu</a>
-						</nav>
+						</nav>-->
 					</header>
 
 				<!-- Menu -->
@@ -43,7 +43,8 @@
 						<div class="inner">
 							<div class="logo"></span></div>
 							<h2>George Stein, PhD</h2>
-							<p>Machine learning researcher @ UC Berkeley & Lawrence Berkeley National Laboratory</p>
+							<p>Machine Learning Researcher</p>
+							<p>@ UC Berkeley & Lawrence Berkeley National Laboratory</p> 
 						</div>
 					</section>
 
@@ -56,10 +57,9 @@
 									<a href="#" class="image"><img src="images/george.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">About me</h2>
-										<p>I focus on developing and applying machine learning methods that leverage high performance computing systems to learn from large datasets.</p>
-
-										<p>Below you can find info on a few of my current and ongoing research projects and published works.</p>
-										<p>Contact details and resume follow.</p>
+										<p>Over the past 5 years I've worked to adapt and advance machine learning techniques to solve applied problems at scale.</p>
+										<p>Below you will find a few of my recent research projects and published works.</p>
+										<p>Contact details and resume follow - please reach out to chat!</p>
 									</div>
 								</div>
 							</section>
@@ -70,9 +70,10 @@
 									<a href="#" class="image"><img src="images/ssl_umap_small.png" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Millions of images, most without labelled information... So how do we learn?</h2>
-										<p>Sky surveys image hundreds of millions of galaxies, but hardly any of them will ever be examined by an expert and assigned a label. This provides a number of hurdles for training standard supervised machine learning models to classify galaxy types and discover rare objects.</p>
-										<p>Utilizing self-supervised learning, an emerging paradigm in computer vision capabable of <i>learning without labelled information</i>, I compiled a dataset and distiled information from nearly 100 million images from the Dark Energy Spectroscopic Instrument (DESI) Legacy Imaging Surveys.</p>
-										<p>Check out a few of my works below where I developed tools for exploration of this massive dataset, discovered 1600 extremely rare strong gravitational lenses, and constructed models to automatically classifiy millions of galaxies.</p>
+										<p>Sky surveys image hundreds of millions of galaxies, but most will ever be examined by an expert or assigned a label. This provides a number of hurdles for off-the-shelf supervised machine learning methods to classify galaxy types and discover rare objects.</p>
+										<p>First, you need the data! So I compiled nearly 100 million galaxy images from the Dark Energy Spectroscopic Instrument (DESI) Legacy Imaging Surveys in a machine-learning-ready format.</p>
+										<p>Then, I utilized cutting-edge techniques from self-supervised learning - an emerging paradigm in computer vision capabable of <i>learning without labelled information</i> - to train convolutional neural networks capable of performing generalized tasks.</p>
+										<p>I used these networks to develop tools for exploration of this massive dataset, discover 1600 extremely rare strong gravitational lenses, and construct models to automatically classifiy millions of galaxies. Please check out a few of my works below! </p>
 										<a href="https://share.streamlit.io/georgestein/galaxy_search" class="special">Try out my interactive data discovery app here</a>
 										<a href="https://cs.lbl.gov/news-media/news/2021/self-supervised-machine-learning-adds-depth-breadth-and-speed-to-sky-surveys/" class="special">See it in the press</a>
 
@@ -90,10 +91,10 @@
 									<div class="content">
 									  <h2 class="major">Finding a needle in a haystack</h2>
 
-									  <p>Searching for signs of rare events is hard enough when you know what you are looking for, but what about when you're looking for completely unknown signs of new physics?</p>
+									  <p>Searching for rare events is hard enough when you know what they look like, but what about when you have no idea?</p>
 
-									    <p>The LHC Olympics (LHCO) data challenge was created to develop methods for this purpose. Participants were provided with a set of "black-box" datasets and charged with identifying any anomalous events - without having any idea what these events might look like.</p>
-									  <p>While anomaly detection is a key application of machine learning, it is generally more focused on the detection of outlying samples in the low probability density regions of data. I instead developed a method for <t>unsupervised in-distribution anomaly detection</t> using a conditional density estimator, designed to find unique, yet completely unknown, sets of samples residing in high probability density regions</p>
+									    <p>The LHC Olympics (LHCO) data challenge was created to develop methods for this purpose. Participants were provided with a set of "black-box" datasets and charged to find any anomalous events - without having any idea what these events might look like!</p>
+									  <p>While anomaly detection is a key application of machine learning, it is generally more focused on the detection of outlying samples in the low probability density regions of data. I instead developed a method for <t>unsupervised in-distribution anomaly detection</t> using a conditional density estimator, designed to find unique, yet completely unknown, sets of samples residing in high probability density regions.</p>
 									  <p>Outperforming 12 other teams, we managed to detect a new particle appearing in only 0.08% of 1 million collision events, and took home the gold medal</p>
 										<p></p>
 										
@@ -110,26 +111,41 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Additional Projects</h2>
-									<p>Below are some additional projects that I am currently working on or have recently completed</p>
+									<!-- <p>Below are some additional projects that I am currently working on or have recently completed</p> -->
 									<section class="features">
+
+										<article>
+											<a href="#" class="image"><img src="images/ml-in-cosmology.png" alt="" /></a>
+											<h3 class="major">Machine learning in cosmology</h3>
+											<p>The rapid pace of machine learning is difficult to keep on-top of, yet recognizing trends and analysing state-of-the-art methods is essential to achieve the best results for your problem.</p>
+
+											<p>Since 2018 I have curated a (now popular) comprehensive public archive of ML applications to the study of cosmology in order to help scientists and domain experts identify AI solutions applicable to novel problems and rapidly implement them. Take a look to see whats been going on in the field or to design your own project!</p>
+											<a href="https://github.com/georgestein/ml-in-cosmology" class="special">github.com/georgestein/ml-in-cosmology</a>
+										</article>
+
+										<article>
+											<a href="#" class="image"><img src="images/clouds.png" alt="" /></a>
+											<h3 class="major">Segmentation of Satellite Imagery</h3>
+											<p> Multispectral satellite imagery is crucial for geospatial applications such as monitoring wildfires, mapping deforestation, and tracking erupting volcanos. But, the presence of clouds introduces noise and inaccuracy, and thus they need to be identified and removed. </p>
+
+											<p>	Competing as part of a two person team in a popular  <a href="https://www.drivendata.org/competitions/83/cloud-cover/">data science competition</a>, I trained an ensemble of segmentation models to identify cloud cover in satellite imagery. Our unique approach leveraged public APIs to increase the public dataset size 10-fold and allowed us to design a custom set of physically motivated augmentations that nearly eliminated overfitting. We ultimately finished in the top 3% of 850 participants. </p>
+											<a href="https://github.com/georgestein/cloud-segmentation" class="special">Find a writeup of our approach here!</a>
+										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pae.png" alt="" /></a>
 											<h3 class="major">A probabilistic autoencoder for type Ia supernovae</h3>
-											<p>Type Ia supernovae are rare yet extremeley useful objects for mapping the expansion history of our universe. Yet their complexity cannot be modelled from first principles, which requires us to understand them in a data-driven mannor. To do so I devoloped a Probabilistic Autoencoder to study the diversity of spectra we observe from them, to identify objects that do not fit average trends, and to minimize the error that propagates into cosmological analyses.</p>
+											<p>Type Ia supernovae are rare yet extremeley useful objects for mapping the expansion history of our universe. Yet their complexity cannot be modelled from first principles, which requires us to understand them in a data-driven manner.</p> 
+
+											<p>To do so I developed a Probabilistic Autoencoder to study the diversity of spectra we observe from them, to identify objects that do not fit average trends, and to minimize the error that propagates into cosmological analyses.</p>
 											<a href="*" class="special">Paper out soon!</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/websky.png" alt="" /></a>
 											<h3 class="major">The WebSky Suite of Extragalactic CMB simulations</h3>
-											<p>Realistic simulations of the universe are necessary to develop and test scientic analyses, but are a key technical challenge due to the large dynamic range and accuracy required. I worked to modernize, parallellize, and optimize performance of a the mass-Peak Patch simulational pipeline to run on high-performance computing clusters. After completing testing and development of the package, I constructed and released some of the most advanced simualtions to date - the Websky suite</p>
+											<p>Realistic simulations of the universe are necessary to develop and test scientic analyses, but are a key technical challenge due to the large dynamic range and accuracy required.</p>
+											<p>I worked to modernize, parallellize, and optimize performance of a the mass-Peak Patch simulational pipeline to run on high-performance computing clusters. After completing testing and development of the package, I constructed and released some of the most advanced simualtions to date - the Websky suite</p>
 											<a href="https://arxiv.org/abs/2001.08787" class="special">Websky paper: Stein et al., 2020</a>
 																						<a href="https://arxiv.org/abs/2001.08787" class="special">Methods paper: Stein et al., 2019</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/ml-in-cosmology.png" alt="" /></a>
-											<h3 class="major">Machine learning in cosmology</h3>
-											<p>The rapid pace of machine learning applications in science is difficult to keep on-top of, yet recognizing trends and analysing state-of-the-art methods adds critical tools to your toolbelt. Over the past 4 years I've curated a public list of all machine learning papers in cosmology. Take a look to see whats been going on in the field!</p>
-											<a href="https://github.com/georgestein/ml-in-cosmology" class="special">github.com/georgestein/ml-in-cosmology</a>
 										</article>
 
 										<article>
